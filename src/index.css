@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dde1ea;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8bfcc;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #dde1ea transparent;
+}
+
+/* Chat floating button animations */
+@keyframes chat-fab-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 6px 20px rgba(59,130,246,0.45); }
+  50% { transform: scale(1.08); box-shadow: 0 8px 28px rgba(59,130,246,0.6); }
+}
+
+@keyframes chat-fab-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes chat-fab-enter {
+  0% { transform: scale(0) rotate(-90deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.chat-fab {
+  animation: chat-fab-enter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chat-fab:hover {
+  animation: chat-fab-bounce 0.6s ease-in-out infinite;
+}
+
+.chat-fab-icon {
+  transition: transform 0.3s ease;
+}
+
+.chat-fab:hover .chat-fab-icon {
+  transform: scale(1.15);
+}
+
+/* When there are unread messages, keep pulsing */
+.chat-fab:has(.absolute) {
+  animation: chat-fab-enter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), chat-fab-pulse 2s ease-in-out infinite 0.5s;
+}
+
+/* Vertical video feed: hide the scrollbar but keep scroll-snap working */
+.reel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.reel-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* === Reels nav attention animations === */
+
+/* Pulsing gradient background on the reels icon */
+@keyframes reels-icon-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(13,148,136,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(13,148,136,0); }
+}
+.reels-nav-icon {
+  animation: reels-icon-pulse 2s ease-in-out infinite;
+}
+
+/* Floating heart that drifts upward and fades */
+@keyframes reels-heart-float {
+  0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+  15% { opacity: 1; transform: translate(2px, -6px) scale(1); }
+  100% { transform: translate(var(--dx, 8px), -36px) scale(0.6); opacity: 0; }
+}
+.reels-heart {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  pointer-events: none;
+  animation: reels-heart-float 2.5s ease-out forwards;
+}
+
+/* Video icon that pops out and retreats */
+@keyframes reels-video-pop {
+  0% { transform: translate(0,0) scale(0) rotate(0deg); opacity: 0; }
+  30% { transform: translate(10px, -10px) scale(1) rotate(-12deg); opacity: 1; }
+  60% { transform: translate(14px, -14px) scale(1) rotate(-8deg); opacity: 1; }
+  100% { transform: translate(24px, -24px) scale(0.4) rotate(20deg); opacity: 0; }
+}
+.reels-video-pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  animation: reels-video-pop 2.5s ease-out forwards;
+}
+
+/* "NEW" badge bounce */
+@keyframes reels-badge-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.reels-badge {
+  animation: reels-badge-bounce 1.5s ease-in-out infinite;
+}
+
+/* Subtle wiggle on the whole nav row to draw the eye */
+@keyframes reels-row-wiggle {
+  0%, 88%, 100% { transform: translateX(0); }
+  91% { transform: translateX(1.5px); }
+  94% { transform: translateX(-1.5px); }
+  97% { transform: translateX(1px); }
+}
+.reels-nav-row {
+  animation: reels-row-wiggle 5s ease-in-out infinite;
+}
+
+/* Spinning disc for sound attribution on video feed */
+@keyframes spin-disc {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-disc {
+  animation: spin-disc 4s linear infinite;
+}
+
+/* Equalizer bars for sound preview */
+@keyframes sound-bar {
+  0% { height: 20%; }
+  100% { height: 100%; }
+}
