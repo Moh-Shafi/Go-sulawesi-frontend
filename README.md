@@ -64,6 +64,61 @@ Sulawesi features unique cultural events (e.g., Toraja funeral ceremonies, Mappa
 
 ---
 
+
+---
+
+## 📸 Visual Showcase & Application Screenshots
+
+Here is a visual tour of the **GoSulawesi Web Experience**, comparing desktop views and mobile app layouts side-by-side:
+
+### 1. 🌟 Landing Page & Hero Showcase
+| Desktop View (`1-pc.png`) | Mobile App Experience (`1-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/1-pc.png" width="540" alt="Landing Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/1-app.png" width="260" alt="Landing Mobile" /> |
+
+---
+
+### 2. 🗺️ Destination Exploration & Cultural Discovery
+| Desktop Search & Filter (`2-pc.png`) | Mobile Destination View (`2-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/2-pc.png" width="540" alt="Discovery Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/2-app.png" width="260" alt="Discovery Mobile" /> |
+
+---
+
+### 3. 🛶 Tour Packages, Guides & Booking Detail
+| Tour & Guide Package Info (`3-pc.png`) | Mobile Checkout & Reservation (`3-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/3-pc.png" width="540" alt="Tour Detail Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/3-app.png" width="260" alt="Tour Detail Mobile" /> |
+
+---
+
+### 4. 🏢 Local Provider & Business Dashboard
+| Business Revenue & Operations (`4-pc.png`) | Mobile Provider Management (`4-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/4-pc.png" width="540" alt="Business Dashboard Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/4-app.png" width="260" alt="Business Mobile" /> |
+
+---
+
+### 5. 🧳 Tourist Itinerary & Trips Organizer
+| Tourist Hub & My Trips (`5-pc.png`) | Mobile Tourist Profile (`5-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/5-pc.png" width="540" alt="Tourist Dashboard Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/5-app.png" width="260" alt="Tourist Mobile" /> |
+
+---
+
+### 6. 📱 Reels Video Feed & Interactive Mobile UI
+| Admin Operations Suite (`6-pc.png`) | TikTok-Style Reels Stream (`6-app.png`) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/6-pc.png" width="540" alt="Admin Suite Desktop" /> | <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/6-app.png" width="260" alt="Reels Feed Mobile" /> |
+
+<div align="center">
+  <p><b>Mobile Onboarding & Guide Engagement:</b></p>
+  <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/10-app.png" width="240" alt="App Screen 10" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/Moh-Shafi/Go-sulawesi/main/Foto/11-app.png" width="240" alt="App Screen 11" />
+</div>
+
+
 ## 🏛️ Application Architecture & Folder Hierarchy
 
 ```
